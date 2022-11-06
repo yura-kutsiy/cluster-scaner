@@ -11,7 +11,7 @@ pipeline {
                 steps { 
                     sh '''
                          popeye --force-exit-zero -l error -o html --save --output-file popeye.html
-                         trivy k8s -n app --report summary all
+                         trivy k8s -n jenkins --report summary all
                     '''
                 }
             }
