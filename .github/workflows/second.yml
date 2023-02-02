@@ -16,6 +16,6 @@ jobs:
           tokenSuffix: '}#'
           files: '[".github/sync.yml"]'
         env:
-          BRANCH_NAME: ${{ env.DAY_OF_WEEK }}
+          BRANCH_NAME: ${{ GITHUB_ACTION_PATH }}
       - name: check file for debug
         run: cat .github/sync.yml
