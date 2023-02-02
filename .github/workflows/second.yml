@@ -1,6 +1,8 @@
 name: second pipeline
 on:
-  workflow_dispatch:
+  push:
+    branches:
+      - "gha"
 jobs:
   sync:
     runs-on: ubuntu-latest
